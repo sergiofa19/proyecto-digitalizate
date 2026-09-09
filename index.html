@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaCut Studio — Peluquería &amp; Barbería</title>
+<meta name="description" content="NovaCut Studio, peluquería y barbería en Alcalá de Henares. Cortes modernos, coloración profesional y tratamientos capilares.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Reproductor de música de fondo -->
+<audio id="bg-audio" src="music.mp3" loop preload="auto"></audio>
+<button id="music-toggle" aria-label="Pausar música de fondo" aria-pressed="true">
+  <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+  <span class="music-label">Sonido</span>
+</button>
+
+<header class="site-header">
+  <a href="#top" class="brand">
+    <span class="brand-name">Novacut Studio</span>
+    <span class="brand-sub">Peluquería &amp; Barbería</span>
+  </a>
+  <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="site-nav">
+    <a href="#nosotros">Nosotros</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#instalaciones">Instalaciones</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1600&auto=format&fit=crop" alt="Clienta con cabello largo y castaño recién peinado en el salón" loading="eager">
+    </div>
+    <div class="hero-copy">
+      <p class="hero-kicker">Tu estilo empieza aquí</p>
+      <h1>Peluquería &amp; Barbería</h1>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="about" id="nosotros">
+    <div class="about-media">
+      <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?q=80&w=1400&auto=format&fit=crop" alt="Estilista secando el cabello, con productos de peluquería en primer plano" loading="lazy">
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">Peluquería &amp; Barbería</p>
+      <h2>Novacut<br>Studio</h2>
+      <p>Novacut Studio es una peluquería que apuesta por combinar creatividad, atención personalizada y tecnología para ofrecer una experiencia diferente. Nuestro objetivo es que cada cliente encuentre un estilo que refleje su personalidad mediante cortes modernos, coloraciones profesionales y tratamientos capilares de alta calidad.</p>
+      <p>Nos dirigimos especialmente a jóvenes, profesionales y familias que valoran una imagen cuidada y un servicio cercano. Además de los servicios tradicionales de peluquería y barbería, utilizamos herramientas digitales e inteligencia artificial para mejorar la comunicación con nuestros clientes.</p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="services" id="servicios">
+    <div class="services-head">
+      <h2>Nuestros servicios</h2>
+      <p class="services-tag">Tenemos todo para hacerte deslumbrar</p>
+    </div>
+
+    <div class="services-catalog">
+      <h3>Catálogo de servicios</h3>
+
+      <div class="service-group">
+        <p class="service-group-title">Cabello masculino</p>
+        <div class="service-row">
+          <span class="service-name">Corte masculino</span>
+          <span class="service-rule"></span>
+          <span class="service-price">18 €</span>
+        </div>
+      </div>
+
+      <div class="service-group">
+        <p class="service-group-title">Servicios completo (cabello &amp; barba)</p>
+        <div class="service-row">
+          <span class="service-name">Barbería + barba</span>
+          <span class="service-rule"></span>
+          <span class="service-price">22 €</span>
+        </div>
+      </div>
+
+      <div class="service-group">
+        <p class="service-group-title">Cabello femenino &amp; estilizado</p>
+        <div class="service-row">
+          <span class="service-name">Corte femenino</span>
+          <span class="service-rule"></span>
+          <span class="service-price">28 €</span>
+        </div>
+        <div class="service-row">
+          <span class="service-name">Coloración</span>
+          <span class="service-rule"></span>
+          <span class="service-price">35 €</span>
+        </div>
+        <div class="service-row">
+          <span class="service-name">Peinado para eventos</span>
+          <span class="service-rule"></span>
+          <span class="service-price">40 €</span>
+        </div>
+      </div>
+
+      <div class="service-group">
+        <p class="service-group-title">Tratamientos capilares</p>
+        <div class="service-row">
+          <span class="service-name">Tratamiento hidratante</span>
+          <span class="service-rule"></span>
+          <span class="service-price">25 €</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCIA / RITMO -->
+  <section class="process" id="experiencia">
+    <div class="process-head">
+      <h2>Nuestro ritmo</h2>
+      <p>Tu paso a paso</p>
+    </div>
+    <ol class="process-steps">
+      <li>
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=800&auto=format&fit=crop" alt="Consulta entre estilista y clienta" loading="lazy">
+        <h3>Consulta 1:1</h3>
+        <p>Empezamos escuchándote: tu estilo, personalidad y lo que quieres expresar.</p>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=800&auto=format&fit=crop" alt="Estilista aplicando técnica de coloración" loading="lazy">
+        <h3>Elige tu transformación</h3>
+        <p>Juntos elegimos el camino: corte, color o ambos, siempre como una obra a tu medida.</p>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" alt="Muestrario de tonos de color para cabello" loading="lazy">
+        <h3>Selección de productos</h3>
+        <p>Seleccionamos fórmulas y cuidados que respeten tu cabello y tu esencia.</p>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800&auto=format&fit=crop" alt="Resultado final de un peinado rubio" loading="lazy">
+        <h3>Hair education</h3>
+        <p>Te enseñamos a recrear tu look en minutos, para que tu estilo viva más allá del estudio.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- INSTALACIONES -->
+  <section class="facilities" id="instalaciones">
+    <div class="facilities-photo facilities-photo--left">
+      <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1200&auto=format&fit=crop" alt="Recepción del salón con mostrador de madera clara" loading="lazy">
+    </div>
+    <div class="facilities-copy">
+      <h2>Nuestras<br>instalaciones</h2>
+      <p class="facilities-tag">Un espacio pensado para ti</p>
+
+      <div class="facilities-grid">
+        <img src="https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?q=80&w=500&auto=format&fit=crop" alt="Sillones de peluquería frente a espejos" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=500&auto=format&fit=crop" alt="Estación de lavado de cabello moderna" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?q=80&w=500&auto=format&fit=crop" alt="Productos y herramientas de peluquería ordenados" loading="lazy">
+      </div>
+      <p class="facilities-caption"><strong>Instalaciones de vanguardia.</strong> Tecnología avanzada y ambientes únicos.</p>
+
+      <div class="facilities-secondary">
+        <h3>Recepción cálida</h3>
+        <p>Un espacio de bienvenida diseñado para tu comodidad y relajación.</p>
+      </div>
+    </div>
+    <div class="facilities-photo facilities-photo--right">
+      <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=1000&auto=format&fit=crop" alt="Sala de espera privada con sillones color crema" loading="lazy">
+      <p class="facilities-note"><strong>Sala de consulta privada.</strong> Ambiente tranquilo para diagnósticos y asesoramiento personalizado.</p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="contact-info">
+      <div>
+        <p class="contact-label">Horario</p>
+        <p>Lunes a sábados<br>de 9:00 a 22:00</p>
+      </div>
+      <div>
+        <p class="contact-label">Dirección</p>
+        <p>Calle Mayor #19, Alcalá de Henares (Madrid)</p>
+      </div>
+    </div>
+
+    <div class="contact-photo">
+      <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=900&auto=format&fit=crop" alt="Estilista sonriendo en el salón" loading="lazy">
+    </div>
+
+    <div class="contact-cta">
+      <h2>¿Nos vemos<br>frente al espejo?</h2>
+      <a class="cta-button" href="tel:+34624123456">Reservar cita</a>
+      <p class="contact-social">@novacutstudio</p>
+      <p class="contact-phone">624 123 45 67</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
