@@ -200,7 +200,7 @@
 
     <div class="contact-cta">
       <h2>¿Nos vemos<br>frente al espejo?</h2>
-      <a class="cta-button" href="tel:+34624123456">Reservar cita</a>
+      <button class="cta-button" id="reservar-cta" type="button">Reservar cita</button>
       <p class="contact-social">@novacutstudio</p>
       <p class="contact-phone">624 123 45 67</p>
     </div>
@@ -213,8 +213,14 @@
 <!-- Chatbot de reservas (Landbot) -->
 <script type="module" src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs"></script>
 <script type="module">
-  var myLandbot = new Landbot.Livechat({
+  window.myLandbot = new Landbot.Livechat({
     configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3507288-RCECYB85LD93CDJ9/index.json',
+  });
+
+  document.getElementById('reservar-cta').addEventListener('click', () => {
+    if (window.myLandbot) {
+      window.myLandbot.open();
+    }
   });
 </script>
 </body>
