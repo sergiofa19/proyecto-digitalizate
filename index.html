@@ -209,5 +209,13 @@
 </main>
 
 <script src="script.js"></script>
+
+<!-- Chatbot de reservas (Landbot) -->
+<script type="module" src="https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs"></script>
+<script type="module">
+  var myLandbot = new Landbot.Livechat({
+    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3507288-RCECYB85LD93CDJ9/index.json',
+  });
+</script>
 </body>
 </html>
